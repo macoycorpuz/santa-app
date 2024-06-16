@@ -1,6 +1,12 @@
 import React from 'react';
 
 const App: React.FC = () => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const form = e.currentTarget;
+    console.log(form.userid.value, form.wish.value);
+    e.preventDefault();
+  };
+
   return (
     <>
       <header>
@@ -9,9 +15,9 @@ const App: React.FC = () => {
 
       <main>
         <p className='bold'>Ho ho ho, what you want for Christmas?</p>
-        who are you?
-        <input name='userid' placeholder='charlie.brown' />
-        <form method='post'>
+        <form onSubmit={onSubmit}>
+          who are you?
+          <input name='userid' placeholder='charlie.brown' />
           what do you want for christmas?
           <textarea
             name='wish'
