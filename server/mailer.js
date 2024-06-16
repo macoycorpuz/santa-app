@@ -20,7 +20,7 @@ const getEmailMessage = () => {
 
 const startMailer = () =>
   nodemailer.createTestAccount((error, account) => {
-    console.log('Starting mailer...');
+    console.log('Mailer started...');
 
     if (error) {
       console.error('Failed to create a testing account. ' + error.message);
@@ -44,16 +44,15 @@ const startMailer = () =>
     };
 
     const sendEmail = () => {
+      console.log('Sending email...');
       const options = { ...mailOptions, text: getEmailMessage() };
       transporter.sendMail(options, (error, info) => {
         if (error) {
           console.error('An error occurred: ', error.message);
           return process.exit(1);
         }
-        console.log(
-          'Message sent! Preview URL: %s',
-          nodemailer.getTestMessageUrl(info)
-        );
+        const url = nodemailer.getTestMessageUrl(info);
+        console.log('Message sent! Preview URL: %s', url);
       });
     };
 

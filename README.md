@@ -1,3 +1,28 @@
+# Santa App
+
+The application was created using react for client and express for server
+
+- To run the project, run the following command: `yarn start` 
+- Client and Server can run separately using the following command: `yarn start:client` and `yarn start:server`
+
+## Project Structure
+
+- `/server` - Contains all server side code
+  - `index` - Starting point of express application and declaration of endpoints
+  - `child` - Contains the logic to fetch users, user profile and age validation
+  - `mailer` - Contains the code to send pending wishes through mail every 15 seconds. To simplify mail configurations, test account is used.
+  - `data` - In memory data for pending wishes. In real world scenario, this should be replaced by on-disk database.
+- `/src` - Contains all client side code.
+
+
+## Packages added
+
+- `nodemailer` - to send email from nodejs
+- `axios` - used to fetch data from users.json and userProfiles.json and post wish in client
+- `cors` - to allow client access resource from server
+
+---
+
 # IMPORTANT! READ before starting
 
 By default for anonymous users (non logged in), your code and app will only remain on glitch.com for 5 days.
