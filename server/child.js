@@ -1,3 +1,5 @@
+const { pendingWishes } = require('./data');
+
 const axios = require('axios');
 const instance = axios.create({
   baseURL: 'https://raw.githubusercontent.com/alj-devops/santa-data/master',
@@ -51,6 +53,13 @@ const sendWish = async (reqeust, response) => {
   if (age > CHILD_AGE_LIMIT) {
     return response.status(400).json({ message: CHILD_AGE_LIMIT_MESSAGE });
   }
+
+  // currently using in memory database. this should be moved to on-disk database
+  pendingWishes.push({
+    username: child.username,
+    address: childProfile.address,
+    wish,
+  });
 
   response.json({ id: child.uid, isWishSent: true });
 };
