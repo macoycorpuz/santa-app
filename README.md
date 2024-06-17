@@ -1,9 +1,12 @@
 # Santa App
 
+_I published project to github because nodejs 20 wasn't working in glitch_
+
 The application was created using react for client and express for server
 
 - To run the project, run the following command: `yarn start` 
 - Client and Server can run separately using the following command: `yarn start:client` and `yarn start:server`
+- App can be access from `http://localhost:8080/`
 - To be able to see email messages, check logs and click preview URL. (ie. https://ethereal.email/message/Zm80lf6C5BlireoVZm81L1bGCTYj7a4FAAAACr0lgJdXLpW3AVcDEbkxrK0)
 
 ## Project Structure
@@ -23,29 +26,6 @@ The application was created using react for client and express for server
 - `cors` - to allow client access resource from server
 - `concurrently` - to run server and client at the same time
 - `nodemon` - to run server and watch changes
-
----
-
-# IMPORTANT! READ before starting
-
-By default for anonymous users (non logged in), your code and app will only remain on glitch.com for 5 days.
-In order to not lose your challenge, please create a glitch.com account and log in to glitch.com before proceeding.
-
-The following README contains instructions to guide you through the coding challenge, please read them carefully.
-
-# JS coding challenge:
-
-## How to create and submit your app using glitch
-
-1. **Login to glitch**: make sure you are logged in to glitch.com
-
-2. **Clone**: Go to this URL: https://glitch.com/~js-santa-app and click the `Remix your own` button to clone the code. This will copy all the code to a new, randomly generated URL (e.g. https://glitch.com/edit/#!/capable-toothpaste). This is your URL to code on, no other candidates will have this URL.
-
-3. **Code**: You can edit the code directly in the Glitch editor or use your editor of choice (VSCode, Sublime, etc) and copy paste the files into Glitch. Git import and export is also available in the Tools menu on the bottom left. How you edit the code is entirely up to you, so long as your finished work is viewable at the URL created in the previous step.
-
-> **NOTE**: Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
-
-4. **Turn in**: When you finish coding, send your URL to us so we can review your code.
 
 ## Objectives overview:
 
