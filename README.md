@@ -21,6 +21,8 @@ The application was created using react for client and express for server
 - `nodemailer` - to send email from nodejs
 - `axios` - used to fetch data from users.json and userProfiles.json and post wish in client
 - `cors` - to allow client access resource from server
+- `concurrently` - to run server and client at the same time
+- `nodemon` - to run server and watch changes
 
 ---
 
