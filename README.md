@@ -4,6 +4,7 @@ The application was created using react for client and express for server
 
 - To run the project, run the following command: `yarn start` 
 - Client and Server can run separately using the following command: `yarn start:client` and `yarn start:server`
+- To be able to see email messages, check logs and click preview URL. (ie. https://ethereal.email/message/Zm80lf6C5BlireoVZm81L1bGCTYj7a4FAAAACr0lgJdXLpW3AVcDEbkxrK0)
 
 ## Project Structure
 
