@@ -12,7 +12,7 @@ app.use(cors());
 
 app.post('/wish', sendWish);
 
-const listener = app.listen(process.env.PORT || 3000, function () {
-  console.log('Your app is listening on port ' + listener.address().port);
+const listener = app.listen(process.env.PORT || 8080, function () {
+  console.log('Server is listening on port ' + listener.address().port);
   startMailer();
 });

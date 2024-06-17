@@ -6,7 +6,7 @@ const ERROR = 'error';
 const LOADING = 'loading';
 
 const sendWish = async (userid: string, wish: string) => {
-  const url = 'http://localhost:3000/wish';
+  const url = 'http://localhost:8080/wish';
   const response = await axios.post(url, { userid, wish });
   return response;
 };

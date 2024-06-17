@@ -4,7 +4,7 @@
   "description": "A simple Node app built on Express, instantly up and running.",
   "main": "server.js",
   "scripts": {
-    "start:client": "vite --port 8080",
+    "start:client": "vite --port 3000",
     "start:server": "nodemon  -r dotenv/config server",
     "start": "concurrently \"yarn start:client\" \"yarn start:server\""
   },

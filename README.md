@@ -1,12 +1,13 @@
 # Santa App
 
-_I published project to github because nodejs 20 wasn't working in glitch_
+_Project was published to github because nodejs 20 wasn't working in glitch_
 
 The application was created using react for client and express for server
 
+- Install the packages using `yarn install`
 - To run the project, run the following command: `yarn start` 
 - Client and Server can run separately using the following command: `yarn start:client` and `yarn start:server`
-- App can be access from `http://localhost:8080/`
+- App can be accessed from `http://localhost:3000/`
 - To be able to see email messages, check logs and click preview URL. (ie. https://ethereal.email/message/Zm80lf6C5BlireoVZm81L1bGCTYj7a4FAAAACr0lgJdXLpW3AVcDEbkxrK0)
 
 ## Project Structure
